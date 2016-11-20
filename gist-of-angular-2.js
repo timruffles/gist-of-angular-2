@@ -33,7 +33,7 @@ function bootstrap(RootComponent) {
   const zone = initializeZones();
   const root = compileComponent(RootComponent);
  
-  const tag = getTagName(RootComponent.Component);
+  const tag = getTagName(RootComponent);
   const rootEl = document.querySelector(tag);
   if(!rootEl) {
       throw Error(`couldn't find ${tag} element for app bootstrap`);
