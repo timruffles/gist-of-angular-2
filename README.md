@@ -1,6 +1,6 @@
-# gist-of-angular-2
+# Get the gist of Angular 2
  
-Angular 2 has lots of interesting techniques and concepts, but it's quite hard to figure out what's going on under the hood.
+Angular 2 has lots of interesting techniques and concepts, but it's quite hard to figure how it really does its magic.
 
  
 I've started to write a simple educational version of Angular 2, in plain ES6. This working toy does many things the same way as the real Angular 2 - for instance, it compiles components into fast, monomorphic functions by compiling their templates.
