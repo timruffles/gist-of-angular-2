@@ -317,8 +317,7 @@ class App {
     static metadata() { 
         return {
             template: `
-                <h2>The gist of Angular 2</h2> 
-                <p>This simple demo shows that we have successfully built a tree from a template, with UI elements having their own backing component instances.</p>
+                <h2>Demo App 🎉</h2> 
                 <counter></counter>
                 <counter></counter>
                 <counter></counter>
