@@ -1,15 +1,13 @@
 // THE GIST OF ANGULAR 2
 // ===========================
 
-// Angular 2 has lots of great ideas, but it's quite hard to figure out what's going on under the hood.
-
-// I've started to write a simple educational version of Angular 2, in plain ES6. This working toy
+// This is a simple educational version of Angular 2, in plain ES6. Though it's just a 
+// [working toy](https://timruffles.github.io/gist-of-angular-2), it
 // does many things the same way as the real Angular 2 - for instance, it compiles components into
 // fast, monomorphic functions by compiling their templates.
 
 // The goal is to implement the hairy 'magic' bits of Angular 2 in code that's as short and readable
 // as possible.
-
 
 // This example is split into 2 parts: framework, and example application.
 
