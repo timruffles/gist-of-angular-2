@@ -1,26 +1,17 @@
-// THE GIST OF ANGULAR 2
-// ===========================
+/* THE GIST OF ANGULAR 2
+ * ===========================
 
-// This is a simple educational version of Angular 2, in plain ES6. Though it's just a 
-// [working toy](https://timruffles.github.io/gist-of-angular-2), it
-// does many things the same way as the real Angular 2 - for instance, it compiles components into
-// fast, monomorphic functions by compiling their templates.
+ * A simple, educational version of Angular 2, in plain ES6. Though it's just a 
+ * working toy, it does things the same way as the real Angular 2 - for instance, it compiles components into
+ * fast, monomorphic functions by compiling their templates.
 
-// The goal is to implement the hairy 'magic' bits of Angular 2 in code that's as short and readable
-// as possible.
+ * The goal is to implement the hairy 'magic' bits of Angular 2 in code that's as short and readable
+ * as possible.
 
-// This example is split into 2 parts: framework, and example application.
+ * This example is split into 2 parts: framework, and example application.
 
-// First we define the 'gist of ng framework'. The goal is to implement some of NG2's interesting ideas
-// in a simplified fashion, to help you understand how components are compiled, templates
-// interpreted, and bindings kept up to date. It does not demonstrate all of the concepts of Angular 2 by any means - see the final note.
-
-// Then that comes our application code, which defines component classes just like in NG2. We then call
-// bootstrap(...) to kick off the live application.
-
-
-// 👍 If you enjoy reading this, please let me know below or via @timruffles. There's quite a lot more to write, and I'd
-// love to do just that if sufficient numbers of people would find that interesting.
+ * 👍 If you enjoy reading this, please let me know below or via @timruffles and I'll write more 
+ */
 
 
 // Part 1: Framework
