@@ -1,4 +1,4 @@
-# Get the gist of Angular 2
+# Toy version of Angular 2: understand the magic!
  
 Angular 2 has lots of interesting techniques and concepts, but it's quite hard to figure how it really does its magic.
 
