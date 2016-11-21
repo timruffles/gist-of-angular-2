@@ -270,8 +270,6 @@ function outputAttach(binding, compiled) {
 }
 
 
-function cl(...args) { console.log(...args)}
-
 // Part 2: our application code, that uses our 'gist of ng2' framework. We define 2 Component classes:
 // a simple counter, and our app which demonstrates that we can have a tree of components.
 
