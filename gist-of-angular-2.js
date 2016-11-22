@@ -50,7 +50,8 @@ function compileComponent(Component) {
   const { template, components: componentConstructors } = Component.metadata();
 
   // parse our template, pulling out bindings + any child components
-  const templateTreeRoot = new DOMParser().parseFromString(template, "text/html");
+  const templateTreeRoot = document.createElement("root-of-tree");
+  templateTreeRoot.innerHTML = template;
   const { bindings, components: attachableComponents } = parseTemplate(templateTreeRoot, componentConstructors);
 
   // our constructor creates our component instances, and stores them in named instance
