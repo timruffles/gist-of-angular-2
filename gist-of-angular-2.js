@@ -50,8 +50,9 @@ function compileComponent(Component) {
   const { template, components: componentConstructors } = Component.metadata();
 
   // parse our template, pulling out bindings + any child components
-  const templateTreeRoot = document.createElement("root-of-tree");
-  templateTreeRoot.innerHTML = template;
+  const templateEl = document.createElement("template");
+  templateEl.innerHTML = template;
+  const templateTreeRoot = templateEl.content;
   const { bindings, components: attachableComponents } = parseTemplate(templateTreeRoot, componentConstructors);
 
   // our constructor creates our component instances, and stores them in named instance
@@ -197,12 +198,7 @@ function attachComponent(el, Compiled, zone) {
 
     // create a new set of DOM nodes from the template...
     const liveEl = instantiateTemplate(Compiled.templateTreeRoot, attachmentsByEl);
-    const frag = document.createDocumentFragment();
-    Array.from(liveEl.childNodes)
-      .forEach(e => frag.appendChild(e));    
-
-    // ...and append where we wish to attach
-    el.appendChild(frag);
+    el.appendChild(liveEl);
 
     return instance;
 }
